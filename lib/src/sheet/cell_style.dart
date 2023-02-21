@@ -230,5 +230,6 @@ class CellStyle extends Equatable {
         _horizontalAlign,
         _fontColorHex,
         _backgroundColorHex,
+        isBorder,
       ];
 }
