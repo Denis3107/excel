@@ -12,6 +12,7 @@ class CellStyle extends Equatable {
   Underline _underline = Underline.None;
   int? _fontSize;
   int _rotation = 0;
+  final bool isBorder;
 
   CellStyle({
     String fontColorHex = 'FF000000',
@@ -25,6 +26,7 @@ class CellStyle extends Equatable {
     Underline underline = Underline.None,
     bool italic = false,
     int rotation = 0,
+    this.isBorder = false,
   }) {
     _textWrapping = textWrapping;
 
